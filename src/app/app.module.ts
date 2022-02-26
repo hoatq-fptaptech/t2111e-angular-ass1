@@ -10,6 +10,7 @@ import {ForgotPasswordComponent} from "./forgotpassword/forgotpassword.component
 import {RouterModule, Routes} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 import {CurrentWeatherComponent} from "./currentweather/currentweather.component";
+import {HttpClientModule} from "@angular/common/http";
 
 const appRoutes:Routes = [
   {path:"",component:LoginComponent},
@@ -24,7 +25,7 @@ const appRoutes:Routes = [
     CurrentWeatherComponent
   ],
   imports: [
-    BrowserModule,FormsModule,
+    BrowserModule,FormsModule,HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
