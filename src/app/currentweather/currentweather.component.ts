@@ -24,7 +24,6 @@ export class CurrentWeatherComponent{
     this.http.get(url,{
       params:parameters
     }).subscribe((rs:any)=>{
-      console.log(rs);
       this.weather.city = rs.name+", "+rs.sys.country;
       this.weather.temp = rs.main.temp;
       this.weather.hump = rs.main.humidity;

@@ -11,18 +11,20 @@ import {RouterModule, Routes} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 import {CurrentWeatherComponent} from "./currentweather/currentweather.component";
 import {HttpClientModule} from "@angular/common/http";
+import {ForecastComponent} from "./forecast/forecast.component";
 
 const appRoutes:Routes = [
   {path:"",component:LoginComponent},
   {path:"register",component:RegisterComponent},
   {path:"forgot-password",component:ForgotPasswordComponent},
-  {path:"current-weather",component:CurrentWeatherComponent}
+  {path:"current-weather",component:CurrentWeatherComponent},
+  {path:"forecast",component:ForecastComponent},
 ]
 @NgModule({
   declarations: [
     AppComponent,HeaderComponent,FooterComponent,
     LoginComponent,RegisterComponent,ForgotPasswordComponent,
-    CurrentWeatherComponent
+    CurrentWeatherComponent,ForecastComponent
   ],
   imports: [
     BrowserModule,FormsModule,HttpClientModule,
