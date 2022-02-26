@@ -37,3 +37,11 @@ a:hover{
 .foooter{
   padding-top: 20px;
 }
+.current-weather{
+  position: relative;
+}
+.current-weather img{
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+}

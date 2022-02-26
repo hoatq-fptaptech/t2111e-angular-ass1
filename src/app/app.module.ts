@@ -9,16 +9,19 @@ import {RegisterComponent} from "./register/register.component";
 import {ForgotPasswordComponent} from "./forgotpassword/forgotpassword.component";
 import {RouterModule, Routes} from "@angular/router";
 import {FormsModule} from "@angular/forms";
+import {CurrentWeatherComponent} from "./currentweather/currentweather.component";
 
 const appRoutes:Routes = [
   {path:"",component:LoginComponent},
   {path:"register",component:RegisterComponent},
-  {path:"forgot-password",component:ForgotPasswordComponent}
+  {path:"forgot-password",component:ForgotPasswordComponent},
+  {path:"current-weather",component:CurrentWeatherComponent}
 ]
 @NgModule({
   declarations: [
     AppComponent,HeaderComponent,FooterComponent,
-    LoginComponent,RegisterComponent,ForgotPasswordComponent
+    LoginComponent,RegisterComponent,ForgotPasswordComponent,
+    CurrentWeatherComponent
   ],
   imports: [
     BrowserModule,FormsModule,
